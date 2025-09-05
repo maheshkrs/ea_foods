@@ -1,0 +1,93 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "name": "Washing powder 5kg",
+      "price": 55,
+      "stock": 44
+    },
+    {
+      "id": "p2",
+      "name": "Cold-pressed Oil 1L",
+      "price": 250,
+      "stock": 10
+    },
+    {
+      "id": "p3",
+      "name": "Jaggery 2kg",
+      "price": 90,
+      "stock": 24
+    },
+    {
+      "id": "p4",
+      "name": "Paneer 400g",
+      "price": 160,
+      "stock": 1
+    },
+    {
+      "id": "p5",
+      "name": "Fresh Milk 1L",
+      "price": 28,
+      "stock": 26
+    },
+    {
+      "id": "p6",
+      "name": "Eggs (6)",
+      "price": 70,
+      "stock": 12
+    },
+    {
+      "id": "p7",
+      "name": "Sugar 1kg",
+      "price": 45,
+      "stock": 8
+    },
+    {
+      "id": "p8",
+      "name": "Salt 1kg",
+      "price": 25,
+      "stock": 0
+    },
+    {
+      "id": "p9",
+      "name": "Spices Pack",
+      "price": 199,
+      "stock": 6
+    },
+    {
+      "id": "p10",
+      "name": "Green Tea Box",
+      "price": 299,
+      "stock": 144
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1757080113085",
+      "productId": "p4",
+      "qty": 1,
+      "slot": "Morning",
+      "deliveryDate": "2025-09-07",
+      "status": "Scheduled",
+      "createdAt": "2025-09-05T13:48:33.084Z"
+    },
+    {
+      "id": "o1757080122376",
+      "productId": "p5",
+      "qty": 4,
+      "slot": "Evening",
+      "deliveryDate": "2025-09-07",
+      "status": "Scheduled",
+      "createdAt": "2025-09-05T13:48:42.375Z"
+    },
+    {
+      "id": "o1757080130520",
+      "productId": "p8",
+      "qty": 2,
+      "slot": "Evening",
+      "deliveryDate": "2025-09-07",
+      "status": "Scheduled",
+      "createdAt": "2025-09-05T13:48:50.519Z"
+    }
+  ]
+}
