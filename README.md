@@ -23,9 +23,9 @@ Project/
 │── server.js         # Custom backend routes (bulk stock update, cancel restore)
 │── package.json      # Backend dependencies
 │── frontend/         # React + Vite frontend
-│   ├── src ───────────├──api
+│   ├── src ─────────────├──api
 │   │                    ├──assets
-│   │                    ├──components
+│   │                    ├──components 
 │   │                    ├──pages
 │   │                    ├──redux
 │   │                    ├──test
@@ -95,6 +95,8 @@ Assumptions
 Cutoff time: orders after 6 PM → delivery in 2 days; before 6 PM → next day.
 
 Cancel order: restores product stock in both Redux state and backend.
+
+Ops Manager updates : updates stock 8:03AM and 6:03PM
 
 Roles: TSUs and SRs use the same order placement UI as customers.
 

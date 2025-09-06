@@ -16,7 +16,7 @@
       "id": "p3",
       "name": "Jaggery 2kg",
       "price": 90,
-      "stock": 22
+      "stock": 24
     },
     {
       "id": "p4",
@@ -61,15 +61,5 @@
       "stock": 144
     }
   ],
-  "orders": [
-    {
-      "id": "o1757094603870",
-      "productId": "p3",
-      "qty": 2,
-      "slot": "Afternoon",
-      "deliveryDate": "2025-09-07",
-      "status": "Scheduled",
-      "createdAt": "2025-09-05T17:50:03.869Z"
-    }
-  ]
+  "orders": []
 }

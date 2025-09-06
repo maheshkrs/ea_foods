@@ -2,26 +2,44 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, updateStockBulk } from "../redux/slices/productsSlice";
 import toast from "react-hot-toast";
-
+ 
 export default function OpsPanel() {
   const dispatch = useDispatch();
   const { items } = useSelector((s) => s.products);
   const [local, setLocal] = useState([]);
-
+ 
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
-
+ 
   useEffect(() => {
     setLocal(items.map((p) => ({ productId: p.id, name: p.name, newStock: p.stock })));
   }, [items]);
-
+ 
+  // Auto-refresh around 8:03 AM and 6:03 PM
+    useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+ 
+      const between8to805 = hours === 8 && minutes === 3;            
+      const inEveningWindow = hours === 18 && minutes == 3;
+ 
+      if (between8to805 || inEveningWindow) {
+        dispatch(fetchProducts());
+        toast.success("Stock auto-updated with Ops refresh");
+      }
+    }, 60 * 100);
+    return () => clearInterval(interval);
+  }, [dispatch]);
+ 
   const changeStock = (i, val) => {
     const copy = [...local];
     copy[i].newStock = Number(val);
     setLocal(copy);
   };
-
+ 
   const submit = async () => {
   try {
     const updates = local.map((l) => ({ productId: l.productId, newStock: l.newStock }));
@@ -31,7 +49,7 @@ export default function OpsPanel() {
     toast.error(err.message || "Stock update failed");
   }
 };
-
+ 
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Products Stock - Ops Dashboard</h1>
@@ -56,3 +74,4 @@ export default function OpsPanel() {
     </div>
   );
 }
+ 
