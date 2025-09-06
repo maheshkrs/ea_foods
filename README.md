@@ -23,7 +23,24 @@ Project/
 │── server.js         # Custom backend routes (bulk stock update, cancel restore)
 │── package.json      # Backend dependencies
 │── frontend/         # React + Vite frontend
-│   ├── src/...
+│   ├── src ───────────├──api
+│   │                    ├──assets
+│   │                    ├──components
+│   │                    ├──pages
+│   │                    ├──redux
+│   │                    ├──test
+│   │                    ├──utils
+│   │                    ├──App.css
+│   │                    ├──App.jsx
+│   │                    ├──setupTest.js
+│   │                    ├──.estlintrc.js
+│   │                    ├──index.html
+│   │                    ├──package.json
+│   │                    ├──postcss.config.cjs
+│   │                    ├──tailwind.config.cjs
+│   │                    ├──vite.config.js
+│   │ 
+│   │
 │   ├── package.json
 │   └── README.md
 │── README.md         # (this file)
