@@ -1,3 +1,4 @@
+/* eslint-env vitest */
 import { describe, it, expect } from "vitest";
 import ordersReducer, { fetchOrders } from "../redux/slices/ordersSlice";
 

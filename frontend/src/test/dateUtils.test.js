@@ -1,3 +1,4 @@
+/* eslint-env vitest */
 import { describe, it, expect } from "vitest";
 import dayjs from "dayjs";
 import { isAfterCutoff, computeDeliveryDateForSlot } from "../utils/dateUtils";

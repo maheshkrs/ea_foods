@@ -16,19 +16,19 @@
       "id": "p3",
       "name": "Jaggery 2kg",
       "price": 90,
-      "stock": 24
+      "stock": 22
     },
     {
       "id": "p4",
       "name": "Paneer 400g",
       "price": 160,
-      "stock": 1
+      "stock": 2
     },
     {
       "id": "p5",
       "name": "Fresh Milk 1L",
       "price": 28,
-      "stock": 26
+      "stock": 30
     },
     {
       "id": "p6",
@@ -46,7 +46,7 @@
       "id": "p8",
       "name": "Salt 1kg",
       "price": 25,
-      "stock": 0
+      "stock": 2
     },
     {
       "id": "p9",
@@ -63,31 +63,13 @@
   ],
   "orders": [
     {
-      "id": "o1757080113085",
-      "productId": "p4",
-      "qty": 1,
-      "slot": "Morning",
-      "deliveryDate": "2025-09-07",
-      "status": "Scheduled",
-      "createdAt": "2025-09-05T13:48:33.084Z"
-    },
-    {
-      "id": "o1757080122376",
-      "productId": "p5",
-      "qty": 4,
-      "slot": "Evening",
-      "deliveryDate": "2025-09-07",
-      "status": "Scheduled",
-      "createdAt": "2025-09-05T13:48:42.375Z"
-    },
-    {
-      "id": "o1757080130520",
-      "productId": "p8",
+      "id": "o1757094603870",
+      "productId": "p3",
       "qty": 2,
-      "slot": "Evening",
+      "slot": "Afternoon",
       "deliveryDate": "2025-09-07",
       "status": "Scheduled",
-      "createdAt": "2025-09-05T13:48:50.519Z"
+      "createdAt": "2025-09-05T17:50:03.869Z"
     }
   ]
 }

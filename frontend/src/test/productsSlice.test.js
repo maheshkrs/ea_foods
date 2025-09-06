@@ -1,3 +1,4 @@
+/* eslint-env vitest */
 import { describe, it, expect } from "vitest";
 import productsReducer, { fetchProducts } from "../redux/slices/productsSlice";
 

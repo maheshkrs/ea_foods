@@ -1,6 +1,8 @@
-
 import js from "@eslint/js";
 import globals from "globals";
+import reactPlugin from "eslint-plugin-react";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
+import reactRefreshPlugin from "eslint-plugin-react-refresh";
 
 export default [
   js.configs.recommended,
@@ -11,25 +13,23 @@ export default [
       sourceType: "module",
       globals: {
         ...globals.browser,
-        ...globals.node
-      }
+        ...globals.node,
+      },
     },
     plugins: {
-      react: require("eslint-plugin-react"),
-      "react-hooks": require("eslint-plugin-react-hooks"),
-      "react-refresh": require("eslint-plugin-react-refresh")
+      react: reactPlugin,
+      "react-hooks": reactHooksPlugin,
+      "react-refresh": reactRefreshPlugin,
     },
     rules: {
       "no-console": "warn",
-      "react/jsx-uses-react": "off", 
-      "react/react-in-jsx-scope": "off", 
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
       "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn"
+      "react-hooks/exhaustive-deps": "warn",
     },
     settings: {
-      react: {
-        version: "detect"
-      }
-    }
+      react: { version: "detect" },
+    },
   }
 ];
